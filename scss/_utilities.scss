@@ -1,0 +1,35 @@
+// Primary Colors
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+$main-font: "Josefin Sans", sans-serif;
+$secondary-font: "Alata", sans-serif;
+
+// Margin and padding utitlity classes
+$space-amounts: (0, 1, 2, 3, 4, 5);
+
+@each $space in $space-amounts {
+  // Margin classes
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  // Padding classes
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+}
